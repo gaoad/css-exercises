@@ -1,0 +1,15 @@
+/* could do this with universal selector also */
+.button-one,
+.button-two {
+    font-size: 24px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
+
+.button-one {
+    background-color: black;
+    color: white;
+}
+
+.button-two {
+    background-color: rgb(234, 234, 93);
+}
