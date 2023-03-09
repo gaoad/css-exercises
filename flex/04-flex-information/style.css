@@ -1,5 +1,8 @@
 body {
   font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
@@ -10,6 +13,25 @@ img {
 .title {
   font-size: 36px;
   font-weight: 900;
+}
+
+.graphic {
+  display: flex;
+  gap: 52px;
+  margin: 30px 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  max-width: 200px;
+}
+
+.text {
+  text-align: center;
 }
 
 /* do not edit this footer */
@@ -24,3 +46,5 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* their solution is much more elegant, but this works for now. I added too many flex items, try to be more elegant */
