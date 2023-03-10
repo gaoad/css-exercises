@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* The solution adds flex: 1 to content instead */
 }
 
 img {
@@ -15,6 +18,7 @@ button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
+  padding: 8px 16px;
   background: #eee;
 }
 
@@ -25,3 +29,34 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  padding: 0px; /* solution adds margin: 0px, then would change header and footer padding */
+}
+
+a {
+  text-decoration: none;
+  color: rgb(80, 80, 80);
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer {
+  background-color: rgb(226, 226, 226);
+}
+
+/* did really well on this one! actually created an elegant solution */
